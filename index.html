@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รณรงค์เพื่อการเปลี่ยนแปลง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🌟 รณรงค์เปลี่ยนแปลง</div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home">หน้าแรก</a></li>
+                        <li><a href="#campaigns">รณรงค์</a></li>
+                        <li><a href="#about">เกี่ยวกับ</a></li>
+                        <li><a href="#contact">ติดต่อ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>ร่วมสร้างการเปลี่ยนแปลง</h1>
+            <p>เสียงของคุณคือพลังแห่งการเปลี่ยนแปลงที่สังคมต้องการ</p>
+            <a href="#campaigns" class="cta-button">เริ่มรณรงค์</a>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section class="campaigns" id="campaigns">
+        <div class="container">
+            <h2 class="section-title">รณรงค์ที่กำลังดำเนินการ</h2>
+            <div class="campaigns-grid" id="campaignsGrid">
+                <!-- Campaign cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="campaignModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-description" id="modalDescription"></p>
+            </div>
+            <div class="modal-body">
+                <div class="campaign-details" id="modalDetails"></div>
+                
+                <div class="campaign-stats">
+                    <div class="supporters-count" id="modalSupporters"></div>
+                    <div class="campaign-target" id="modalTarget"></div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill" id="modalProgress"></div>
+                </div>
+                
+                <div class="success-message" id="successMessage">
+                    ✅ ขอบคุณที่ร่วมลงชื่อสนับสนุน!
+                </div>
+                
+                <div class="support-section">
+                    <h3>ร่วมลงชื่อสนับสนุน</h3>
+                    <p>การสนับสนุนของคุณจะช่วยให้เราบรรลุเป้าหมายได้เร็วขึ้น</p>
+                    <button class="support-button" id="supportBtn">ร่วมลงชื่อสนับสนุน</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 รณรงค์เพื่อการเปลี่ยนแปลง. สร้างด้วยความหวังเพื่ออนาคตที่ดีกว่า</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
